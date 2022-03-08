@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    overflow-y: auto;
+}
+
+.container::-webkit-scrollbar,
+.containerMain::-webkit-scrollbar {
+    width: 0;
+}
+
+.list {
+    /* height: 50px; */
+    line-height: 50px;
+    background-color: #eee;
+    cursor: pointer;
+    padding-left: 20px;
+
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+
+    position: relative;
+}
+
+.listSpan {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-bottom: 2px solid white;
+}
+
+.listSpan:hover {
+    border-bottom: 2px solid #42b983;
+    color: #42b983;
+}
+
+.conten {
+    transition: display 0.2s ease-out;
+    height: auto;
+}
+
+.listActive {
+    color: #42b983;
+}
+
+.conten li {
+    padding-left: 40px;
+    border-bottom: 1px solid snow;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+}
+
+.conten li:hover,
+.contenLiHover {
+    background-color: #42b983;
+    color: snow !important;
+}
+
+.containerMain {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 300px;
+    right: 0;
+    background-color: #f1fafa;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+pre {
+    padding: 20px;
+    font-family: '微软雅黑';
+    color: black;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.copyBtn {
+    word-wrap: normal;
+    word-break: break-all;
+    font-size: inherit;
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #9999aa;
+    padding: 2px 8px;
+    margin: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 5%), 0 2px 4px rgb(0 0 0 / 5%);
+}
+
+.containerMainBox:hover > .copyBtn,
+pre:hover ~ .copyBtn,
+.copyBtn:hover {
+    display: block;
+}
+
+.title {
+    width: 30%;
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+    border: 3px solid cyan;
+    border-left: 5px solid cornflowerblue;
+    padding-left: 10px;
+    color: black;
+    margin: 20px 20px 0;
+    font-family: '微软雅黑';
+    font-weight: bold;
+}
+
+.containerMainBox {
+    border: 5px solid cornflowerblue;
+    background-color: aquamarine;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+img {
+    margin: 20px;
+}
+
+.imgFlex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.imgFlex img {
+    width: 220px;
+    height: 110px;
+}
+
+/* button.accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active,
+button.accordion:hover {
+    border-bottom: 2px solid #42b983;
+}
+
+
+
+.conten li.active,
+.conten li:hover {
+    background-color: aquamarine;
+}
+
+
+
+
+
+.liActive {
+    background-color: cornflowerblue;
+} */
